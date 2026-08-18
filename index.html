@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My first HTML page</title>
+        <!-- Internal Style Sheet -->
+        <style>
+            table, th, td {
+                border: 1px solid red;
+            }
+            #employeeData {
+                background-color: aqua;
+            }
+            .description {
+                font-weight: bold;
+            }
+        </style>
+        <!-- External Style sheet -->
+        <link rel="stylesheet" href="./index.css">
+    </head>
+    <body>
+        <form action="/" target="_blankß">
+            <label for="name">Name: </label><br />
+            <input type="text" id="name" name="name" autocomplete="off"/><br />
+            <label for="email">Email: </label><br />
+            <input type="text" id="email" name="email" /><br />
+            <input type="number"/><br/>
+            <input type="date"/>
+
+            <input type="radio" id="apple" name="fruit_names" value="Apple"/> 
+            <label for="apple">Apple </label><br />
+            <input type="radio" id="orange" value="Orange" name="fruit_names"/> 
+            <label for="orange">Orange </label><br />
+            <input type="radio" id="grapes" value="Grapes" name="fruit_names"/> 
+            <label for="grapes">Grapes </label><br />
+            <br />
+            <input type="checkbox" id="apple" name="fruit1" value="Apple"/> 
+            <label for="apple">Apple </label><br />
+            <input type="checkbox" id="orange" value="Orange" name="fruit2"/> 
+            <label for="orange">Orange </label><br />
+            <input type="checkbox" id="grapes" value="Grapes" name="fruit3"/> 
+            <label for="grapes">Grapes </label><br />
+
+            <select id="fruits" name="fruits" size="2">
+                <option value="Apple">Apple</option>
+                <option value="Orange">Orange</option>
+                <option value="Grapes">Grapes</option>
+                <option value="Watermelom">Watermelom</option>
+            </select>
+
+            <select id="fruits" name="fruits" multiple>
+                <option value="Apple">Apple</option>
+                <option value="Orange">Orange</option>
+                <option value="Grapes">Grapes</option>
+                <option value="Watermelom">Watermelom</option>
+            </select>
+
+            <textarea rows="5" columns="50"></textarea>
+
+            <input type="submit" value="Submit" />
+        </form>
+        
+        
+        <h1 style="color: red;">Welcome to HTML5</h1>
+        <h2 style="color: red;">Welcome to HTML5</h2>
+        <h3 style="color: red;">Welcome to HTML5</h3>
+        <h4 style="color: red;">Welcome to HTML5</h4>
+        <h5 style="color: red;">Welcome to HTML5</h5>
+        <h6 style="color: red;">Welcome to HTML5</h6>
+
+        <p>My first paragraph</p>
+
+        <!-- block level elements -->
+        <!-- give line break -->
+        <div><strong>First</strong> <em>div element</em> </div>
+        <div><b>Second</b> div element</div>
+
+        <!-- inline level elements -->
+        <!-- displays in a single line -->
+        <span><strong>First</strong> span element</span>
+        <span><b>Second</b>  span element</span>
+
+        <ul>
+            <li>Angular</li>
+            <li>React</li>
+            <li>Python</li>
+        </ul>
+
+        <ol>
+            <li>HTML 5</li>
+            <li>CSS 3</li>
+            <li>Javascript</li>
+        </ol>
+
+        <img src="./img_girl.jpeg" alt="Image of a girl in a jacket" width="200px"  height = "250px" />
+        <!-- Inline style -->
+        <a style="text-decoration: none;" href="www.google.com" target="_blank"> Link </a>
+
+        <table>
+            <tr>
+                <th>NAME</th>
+                <th>Place</th>
+                <th>Country</th>
+            </tr>
+            <tr>
+                <td>Raja</td>
+                <td>BLR</td>
+                <td>INDIA</td>
+            </tr>
+            <tr>
+                <td>Pavan</td>
+                <td>TN</td>
+                <td>INDIA</td>
+            </tr>
+        </table>
+
+        <!-- Id selector -->
+        <div id="employeeData">
+            <!-- Class selector -->
+            <p class="description">The above table gves the data about the employees</p>
+            <p class="description">The above table gves the data about the employees</p>
+            <p class="description">The above table gves the data about the employees</p>
+            <p class="description">The above table gves the data about the employees</p>
+        </div>
+
+    <!-- Inline style
+        Internal stylesheet
+        External stylesheet
+        Again the stylesheets will be loaded based on the position inside the head section. The latest stylesheet/styles will win
+        
+        id selector --- #
+        class selector --- .
+    -->
+
+        <button>Submit</button>
+        <div class="button">Submit</div>
+
+
+        <!-- Semantic Elements 
+            <table>
+            <img>
+            <header>
+            <footer>
+            <section>
+            <nav>
+            <button>
+        -->
+        <!-- Non Semantic Elements 
+            <div>
+            <span>
+        -->
+    </body>
+</html>
