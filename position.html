@@ -1,0 +1,87 @@
+<div class="box static">Static</div>
+
+<style>
+    .static {
+        position: static;
+        background: lightblue;
+    }
+</style>
+
+
+<div class="box relative">Relative</div>
+
+<style>
+    .relative {
+        position: relative;
+        left: 50px;
+        top: 20px;
+        background: lightgreen;
+    }
+</style>
+
+
+<div class="parent">
+    <div class="absolute">Absolute</div>
+</div>
+
+<style>
+    .parent {
+        position: relative;
+        height: 200px;
+        border: 1px solid black;
+    }
+
+    .absolute {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        background: orange;
+    }
+</style>
+
+<div class="fixed">Fixed</div>
+
+<style>
+    .fixed {
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        background: red;
+        color: white;
+    }
+</style>
+
+
+<div class="sticky">Sticky Header</div>
+
+<style>
+    .sticky {
+        position: sticky;
+        top: 0;
+        background: yellow;
+        padding: 10px;
+    }
+</style>
+
+<div class="parent">
+    <div class="child">Child</div>
+</div>
+
+<style>
+    .parent {
+        position: relative;
+    }
+
+    .child {
+        position: inherit;
+    }
+</style>
+
+<script>
+document.write("<b>static</b> &nbsp;&nbsp;&nbsp;-> normal position (default)<br><br>");
+document.write("<b>relative</b> -> move from original position<br><br>");
+document.write("<b>absolute</b> -> position inside parent<br><br>");
+document.write("<b>fixed</b> &nbsp;&nbsp;&nbsp;&nbsp;-> fixed on screen<br><br>");
+document.write("<b>sticky</b> &nbsp;&nbsp;&nbsp;-> sticks while scrolling<br><br>");
+document.write("<b>inherit</b> &nbsp;&nbsp;-> inherits parent position<br>");
+</script>
