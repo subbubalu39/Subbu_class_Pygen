@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.container {
+    display: flex;
+    gap: 10px;
+}
+
+.box {
+    flex: 1;
+    padding: 20px;
+    background-color: lightblue;
+    text-align: center;
+    border: 1px solid black;
+}
+
+/* Mobile View */
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+    }
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+    <div class="box">Box 1</div>
+    <div class="box">Box 2</div>
+    <div class="box">Box 3</div>
+</div>
+
+</body>
+</html>
