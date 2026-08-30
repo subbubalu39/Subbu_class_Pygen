@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.container{
+    display:flex;
+    width:250px;
+    border:2px solid black;
+}
+
+.box{
+    width:150px;
+    height:80px;
+    color:white;
+    font-size:30px;
+    text-align:center;
+    line-height:80px;
+}
+
+.box1{
+    background:red;
+    flex-shrink:1;
+}
+
+.box2{
+    background:blue;
+    flex-shrink:2;
+}
+
+.box3{
+    background:green;
+    flex-shrink:0;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+    <div class="box box1">1</div>
+    <div class="box box2">2</div>
+    <div class="box box3">3</div>
+</div>
+
+</body>
+</html>

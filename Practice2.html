@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Responsive Flexbox Layout</title>
+    <style>
+        .container {
+            display: flex;
+            gap: 20px;
+        }
+
+        .box {
+            flex: 1;
+            padding: 20px;
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+        }
+
+        /* Mobile View */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="box">Left Section</div>
+        <div class="box">Middle Section</div>
+        <div class="box">Right Section</div>
+    </div>
+
+</body>
+</html>
